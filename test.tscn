@@ -33,9 +33,7 @@ shader_parameter/outlineColor = Color(0, 0, 0, 1)
 shader_parameter/wiggleFrequency = 0.08
 shader_parameter/wiggleAmplitude = 2.0
 
-[sub_resource type="QuadMesh" id="QuadMesh_e38j0"]
-flip_faces = true
-size = Vector2(2, 2)
+[sub_resource type="QuadMesh" id="QuadMesh_brccv"]
 
 [sub_resource type="Environment" id="Environment_m5qaq"]
 background_mode = 1
@@ -75,10 +73,10 @@ zoom_enabled = true
 transform = Transform3D(1, 0, 0, 0, 0.891939, 0.452154, 0, -0.452154, 0.891939, 0, 3.52008, 4.95668)
 
 [node name="QuadPlane" type="MeshInstance3D" parent="CameraNode/Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 0.89194, -0.452155, 0, 0.452155, 0.89194, 0, -0.224311, -0.552817)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.2)
 material_override = SubResource("ShaderMaterial_udt7l")
 extra_cull_margin = 16384.0
-mesh = SubResource("QuadMesh_e38j0")
+mesh = SubResource("QuadMesh_brccv")
 skeleton = NodePath("../../..")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
