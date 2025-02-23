@@ -24,7 +24,7 @@ albedo_color = Color(0.427782, 0.216588, 0.738281, 1)
 [sub_resource type="BoxMesh" id="BoxMesh_pfex3"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_udt7l"]
-render_priority = 0
+render_priority = 1
 shader = ExtResource("2_u36ka")
 shader_parameter/zNear = 0.05
 shader_parameter/zFar = 100.0
@@ -75,7 +75,7 @@ zoom_enabled = true
 transform = Transform3D(1, 0, 0, 0, 0.891939, 0.452154, 0, -0.452154, 0.891939, 0, 3.52008, 4.95668)
 
 [node name="QuadPlane" type="MeshInstance3D" parent="CameraNode/Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 0.89194, -0.452155, 0, 0.452155, 0.89194, 0, -0.898513, -6.01268)
+transform = Transform3D(1, 0, 0, 0, 0.89194, -0.452155, 0, 0.452155, 0.89194, 0, -0.224311, -0.552817)
 material_override = SubResource("ShaderMaterial_udt7l")
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_e38j0")
